@@ -42,7 +42,6 @@ section {
 .accordion-link {
     font-size: 1.6rem;
     color: rgba(255, 255, 255, .8);
-    text-decoration: none;
     background-color: #283042;
     width: 100%;
     display: flex;
@@ -86,15 +85,15 @@ section {
     padding: 2rem;
 }
 
-.accordion-item:target .answer {
+.is-active .answer {
     max-height: 20rem;
 }
 
-.accordion-item:target .accordion-link .add {
+.is-active .add {
     display: none;
 }
 
-.accordion-item:target .accordion-link .remove {
+.is-active .remove {
     display: block;
 }
 
